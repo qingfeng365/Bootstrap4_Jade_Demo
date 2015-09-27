@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap4_jade",
+  "version": "0.0.1",
+  "homepage": "https://github.com/qingfeng365/Bootstrap4_Jade_Demo",
+  "authors": [
+    "qingfengwuyou126@126.com"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "bootstrap4",
+    "jade"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha"
+  }
+}
