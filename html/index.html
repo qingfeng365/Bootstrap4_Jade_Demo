@@ -9,22 +9,122 @@
     <link href="../css/example.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-center">bootstrap 4 效果展示</h1>
-      <h3>导航</h3>
-      <h4>简易导航</h4>
-      <h5>横向</h5>
-      <div class="row bd-example">
-        <ul class="nav">
-          <li class="nav-item"><a href="#" class="nav-link">链接1</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">链接2</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">链接3</a></li>
-          <li class="nav-item"><a href="#" class="nav-link disabled">无效链接4															</a></li>
-        </ul>
+    <div class="bd-pageheader">
+      <div class="container">
+        <h1>bootstrap 4 效果展示</h1>
+        <p class="lead">常见bootstrap4组件，使用jade模块创建 </p>
       </div>
-      <h5>纵向</h5>
+    </div>
+    <div class="container">
+      <div class="bd-content">
+        <h1 class="bd-title">导航</h1>
+        <p>导航，一般用于普通链接列表，通常只有一级菜单，且不含其它形式的组件</p>
+        <h2>简易导航</h2>
+        <h3>纵向</h3>
+        <div class="row bd-example">
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">链接1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">活跃链接2</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">链接3</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">无效链接4</a></li>
+          </ul>
+        </div>
+        <h3>横向</h3>
+        <div class="row bd-example">
+          <nav class="nav"><a href="#" class="nav-link">链接1&nbsp;|&nbsp;</a><a href="#" class="nav-link active">活跃链接2&nbsp;|&nbsp;</a><a href="#" class="nav-link">链接3&nbsp;|&nbsp;</a><a href="#" class="nav-link disabled">无效链接4</a></nav>
+        </div>
+        <h3>选项卡</h3>
+        <p>下拉菜单的role,aria-haspopup,aria-expanded是为了无障碍访问定义的属性</p>
+        <div class="row bd-example">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link">链接1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">活跃链接2</a></li>
+            <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">下拉菜单</a>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item">下拉菜单1</a><a href="#" class="dropdown-item">下拉菜单2</a><a href="#" class="dropdown-item">下拉菜单3</a>
+                <div class="dropdown-divier"></div><a href="#" class="dropdown-item">下拉菜单4</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">无效链接4</a></li>
+          </ul>
+        </div>
+        <h3>丸状导航</h3>
+        <div class="row bd-example">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link">链接1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">活跃链接2</a></li>
+            <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">下拉菜单</a>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item">下拉菜单1</a><a href="#" class="dropdown-item">下拉菜单2</a><a href="#" class="dropdown-item">下拉菜单3</a>
+                <div class="dropdown-divier"></div><a href="#" class="dropdown-item">下拉菜单4</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">无效链接4</a></li>
+          </ul>
+        </div>
+        <h3>堆叠丸状导航</h3>
+        <p>注意是在nav-pills基础上，叠加nav-stacked</p>
+        <div class="row bd-example">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="nav-item"><a href="#" class="nav-link">链接1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">活跃链接2</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">链接3</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">无效链接4</a></li>
+          </ul>
+        </div>
+        <h3>选项卡面板</h3>
+        <p>根据当前选项卡，显示对应的面板</p>
+        <div role="tabpanel" class="row bd-example">
+          <ul role="tablist" class="nav nav-tabs">
+            <li class="nav-item"><a id="panel1-tab" href="#panel1" data-toggle="tab" role="tab" aria-expanded="true" aria-controls="panel1" class="nav-link active">面板1</a></li>
+            <li class="nav-item"><a id="panel2-tab" href="#panel2" data-toggle="tab" role="tab" aria-expanded="false" aria-controls="panel2" class="nav-link">面板2</a></li>
+            <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">下拉菜单</a>
+              <div class="dropdown-menu"><a id="dropdownpanel1-tab" href="#dropdownpanel1" data-toggle="tab" class="dropdown-item">下拉面板1</a><a id="dropdownpanel2-tab" href="#dropdownpanel2" data-toggle="tab" class="dropdown-item">下拉面板2</a></div>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="panel1" role="tabpanel" aria-expanded="true" aria-labelledby="panel1-tab" class="tab-pane fade active in">
+              <p>
+                面板1 内容 <br/>
+                面板1 内容 <br/>
+                面板1 内容 <br/>
+                面板1 内容 <br/>
+                面板1 内容 <br/>
+              </p>
+            </div>
+            <div id="panel2" role="tabpanel" aria-expanded="true" aria-labelledby="panel2-tab" class="tab-pane fade">
+              <p>
+                面板2 内容 <br/>
+                面板2 内容 <br/>
+                面板2 内容 <br/>
+                面板2 内容 <br/>
+                面板2 内容 <br/>
+              </p>
+            </div>
+            <div id="dropdownpanel1" role="tabpanel" aria-expanded="true" aria-labelledby="dropdownpanel1-tab" class="tab-pane fade">
+              <p>
+                下拉面板1 内容 <br/>
+                下拉面板1 内容 <br/>
+                下拉面板1 内容 <br/>
+                下拉面板1 内容 <br/>
+                下拉面板1 内容 <br/>								
+              </p>
+            </div>
+            <div id="dropdownpanel2" role="tabpanel" aria-expanded="true" aria-labelledby="dropdownpanel2-tab" class="tab-pane fade">
+              <p>
+                下拉面板2 内容 <br/>
+                下拉面板2 内容 <br/>
+                下拉面板2 内容 <br/>
+                下拉面板2 内容 <br/>
+                下拉面板2 内容 <br/>		
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1 class="bd-title">导航栏</h1>
+        <p>导航栏，包括商标，菜单、搜索框等一系列组件，并可固定位置，以及自适应屏幕</p>
+      </div>
     </div>
     <script src="../bower_components/jquery/dist/jquery.min.js"> </script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"> </script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/example.js"> </script>
   </body>
 </html>

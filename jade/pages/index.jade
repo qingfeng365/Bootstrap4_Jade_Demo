@@ -1,19 +1,141 @@
 extends ../layout.jade
 
 block content
-	.container
-		h1.text-center bootstrap 4 效果展示
-		h3 导航
-		h4 简易导航
-		h5 横向
-		.row.bd-example
-			ul.nav
-				li.nav-item
-					a.nav-link(href="#") 链接1
-				li.nav-item
-					a.nav-link(href="#") 链接2
-				li.nav-item
-					a.nav-link(href="#") 链接3
-				li.nav-item
-					a.nav-link.disabled(href="#") 无效链接4															
-		h5 纵向
+		.bd-pageheader
+			.container
+				h1 bootstrap 4 效果展示
+				p.lead 常见bootstrap4组件，使用jade模块创建 
+		.container
+			.bd-content
+				h1.bd-title 导航
+				p 导航，一般用于普通链接列表，通常只有一级菜单，且不含其它形式的组件
+				h2 简易导航
+				h3 纵向
+				.row.bd-example
+					ul.nav
+						li.nav-item
+							a.nav-link(href="#") 链接1
+						li.nav-item
+							a.nav-link.active(href="#") 活跃链接2
+						li.nav-item
+							a.nav-link(href="#") 链接3
+						li.nav-item
+							a.nav-link.disabled(href="#") 无效链接4
+				h3 横向
+				.row.bd-example
+					nav.nav
+						a.nav-link(href="#") 链接1&nbsp;|&nbsp;
+						a.nav-link.active(href="#") 活跃链接2&nbsp;|&nbsp;
+						a.nav-link(href="#") 链接3&nbsp;|&nbsp;
+						a.nav-link.disabled(href="#") 无效链接4
+				h3 选项卡
+				p 下拉菜单的role,aria-haspopup,aria-expanded是为了无障碍访问定义的属性
+				.row.bd-example
+					ul.nav.nav-tabs
+						li.nav-item
+							a.nav-link(href="#") 链接1
+						li.nav-item
+							a.nav-link.active(href="#") 活跃链接2
+						li.nav-item.dropdown
+							a.nav-link.dropdown-toggle(href="#",
+								data-toggle="dropdown",
+								role="button",
+								aria-haspopup="true",aria-expanded="false"
+								) 下拉菜单
+							.dropdown-menu
+								a.dropdown-item(href="#") 下拉菜单1
+								a.dropdown-item(href="#") 下拉菜单2
+								a.dropdown-item(href="#") 下拉菜单3
+								.dropdown-divier
+								a.dropdown-item(href="#") 下拉菜单4
+						li.nav-item
+							a.nav-link.disabled(href="#") 无效链接4
+				h3 丸状导航
+				.row.bd-example
+					ul.nav.nav-pills
+						li.nav-item
+							a.nav-link(href="#") 链接1
+						li.nav-item
+							a.nav-link.active(href="#") 活跃链接2
+						li.nav-item.dropdown
+							a.nav-link.dropdown-toggle(href="#",
+								data-toggle="dropdown",
+								role="button",
+								aria-haspopup="true",aria-expanded="false"
+								) 下拉菜单
+							.dropdown-menu
+								a.dropdown-item(href="#") 下拉菜单1
+								a.dropdown-item(href="#") 下拉菜单2
+								a.dropdown-item(href="#") 下拉菜单3
+								.dropdown-divier
+								a.dropdown-item(href="#") 下拉菜单4
+						li.nav-item
+							a.nav-link.disabled(href="#") 无效链接4
+				h3 堆叠丸状导航
+				p 注意是在nav-pills基础上，叠加nav-stacked
+				.row.bd-example
+					ul.nav.nav-pills.nav-stacked
+						li.nav-item
+							a.nav-link(href="#") 链接1
+						li.nav-item
+							a.nav-link.active(href="#") 活跃链接2
+						li.nav-item
+							a.nav-link(href="#") 链接3
+						li.nav-item
+							a.nav-link.disabled(href="#") 无效链接4
+				h3 选项卡面板
+				p 根据当前选项卡，显示对应的面板
+				.row.bd-example(role="tabpanel")
+					ul.nav.nav-tabs(role="tablist")
+						li.nav-item
+							a#panel1-tab.nav-link.active(href="#panel1",
+								data-toggle="tab",
+								role="tab",aria-expanded="true" aria-controls="panel1") 面板1
+						li.nav-item
+							a#panel2-tab.nav-link(href="#panel2",
+								data-toggle="tab",
+								role="tab", aria-expanded="false",aria-controls="panel2") 面板2
+						li.nav-item.dropdown
+							a.nav-link.dropdown-toggle(href="#",
+								data-toggle="dropdown",
+								role="button",
+								aria-haspopup="true",aria-expanded="false"
+								) 下拉菜单
+							.dropdown-menu
+								a#dropdownpanel1-tab.dropdown-item(href="#dropdownpanel1",
+									data-toggle="tab") 下拉面板1
+								a#dropdownpanel2-tab.dropdown-item(href="#dropdownpanel2",
+									data-toggle="tab") 下拉面板2
+					.tab-content
+						#panel1.tab-pane.fade.active.in(role="tabpanel", aria-expanded="true",aria-labelledby="panel1-tab")
+							p
+								| 面板1 内容 <br/>
+								| 面板1 内容 <br/>
+								| 面板1 内容 <br/>
+								| 面板1 内容 <br/>
+								| 面板1 内容 <br/>
+						#panel2.tab-pane.fade(role="tabpanel", aria-expanded="true",aria-labelledby="panel2-tab")
+							p
+								| 面板2 内容 <br/>
+								| 面板2 内容 <br/>
+								| 面板2 内容 <br/>
+								| 面板2 内容 <br/>
+								| 面板2 内容 <br/>
+						#dropdownpanel1.tab-pane.fade(role="tabpanel", aria-expanded="true",aria-labelledby="dropdownpanel1-tab")
+							p
+								| 下拉面板1 内容 <br/>
+								| 下拉面板1 内容 <br/>
+								| 下拉面板1 内容 <br/>
+								| 下拉面板1 内容 <br/>
+								| 下拉面板1 内容 <br/>								
+						#dropdownpanel2.tab-pane.fade(role="tabpanel", aria-expanded="true",aria-labelledby="dropdownpanel2-tab")
+							p
+								| 下拉面板2 内容 <br/>
+								| 下拉面板2 内容 <br/>
+								| 下拉面板2 内容 <br/>
+								| 下拉面板2 内容 <br/>
+								| 下拉面板2 内容 <br/>		
+
+				h1.bd-title 导航栏
+				p 导航栏，包括商标，菜单、搜索框等一系列组件，并可固定位置，以及自适应屏幕
+				
