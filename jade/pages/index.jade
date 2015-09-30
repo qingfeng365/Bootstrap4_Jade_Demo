@@ -3,5 +3,17 @@ extends ../layout.jade
 block content
 	.container
 		h1.text-center bootstrap 4 效果展示
-    h3 导航
-    h3
+		h3 导航
+		h4 简易导航
+		h5 横向
+		.row.bd-example
+			ul.nav
+				li.nav-item
+					a.nav-link(href="#") 链接1
+				li.nav-item
+					a.nav-link(href="#") 链接2
+				li.nav-item
+					a.nav-link(href="#") 链接3
+				li.nav-item
+					a.nav-link.disabled(href="#") 无效链接4															
+		h5 纵向
