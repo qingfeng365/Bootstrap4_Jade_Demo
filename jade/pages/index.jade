@@ -209,6 +209,8 @@ block content
 					nav.navbar.navbar-light(style="background-color: #e3f2fd;")
 						a.navbar-brand(href="#") 商标
 						ul.nav.navbar-nav
+							li.nav-item
+								button.navbar-toggler(type="button", data-toggle="collapse", data-target="#exCollapsingNavbar") &#9776;
 							li.nav-item.active
 								a.nav-link(href="#") 活跃链接1 
 							li.nav-item
@@ -220,3 +222,7 @@ block content
 						form.form-inline.navbar-form.pull-right
 							input.form-control(type="text", placeholder="请输入搜索内容")
 							button.btn.btn-primary-outline(type="submit") 搜索						
+					#exCollapsingNavbar.collapse
+						.bg-inverse.p-a
+							h4 折叠的内容
+							span.text-muted 折叠的内容
