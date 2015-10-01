@@ -138,4 +138,85 @@ block content
 
 				h1.bd-title 导航栏
 				p 导航栏，包括商标，菜单、搜索框等一系列组件，并可固定位置，以及自适应屏幕
-				
+				p 导航栏总是横向排列，即使导航是用纵向模式，也会改为横向显示
+				h2 主题
+				h3 无色(白色)主题样式 navbar-light bg-faded
+				.row.bd-example
+					nav.navbar.navbar-light.bg-faded
+						a.navbar-brand(href="#") 商标
+						ul.nav.navbar-nav
+							li.nav-item.active
+								a.nav-link(href="#") 活跃链接1 
+							li.nav-item
+								a.nav-link(href="#") 链接2 
+							li.nav-item
+								a.nav-link(href="#") 链接3 
+							li.nav-item
+								a.nav-link(href="#") 链接4 
+						form.form-inline.navbar-form.pull-right
+							input.form-control(type="text", placeholder="请输入搜索内容")
+							button.btn.btn-success-outline(type="submit") 搜索
+				h3 黑色主题样式 navbar-dark bg-inverse
+				.row.bd-example
+					nav.navbar.navbar-dark.bg-inverse
+						a.navbar-brand(href="#") 商标
+						ul.nav.navbar-nav
+							li.nav-item.active
+								a.nav-link(href="#") 活跃链接1 
+							li.nav-item
+								a.nav-link(href="#") 链接2 
+							li.nav-item
+								a.nav-link(href="#") 链接3 
+							li.nav-item
+								a.nav-link(href="#") 链接4 
+						form.form-inline.navbar-form.pull-right
+							input.form-control(type="text", placeholder="请输入搜索内容")
+							button.btn.btn-info-outline(type="submit") 搜索
+				h3 蓝色主题样式 navbar-dark bg-primary
+				.row.bd-example
+					nav.navbar.navbar-dark.bg-primary
+						a.navbar-brand(href="#") 商标
+						ul.nav.navbar-nav
+							li.nav-item.active
+								a.nav-link(href="#") 活跃链接1 
+							li.nav-item
+								a.nav-link(href="#") 链接2 
+							li.nav-item
+								a.nav-link(href="#") 链接3 
+							li.nav-item
+								a.nav-link(href="#") 链接4 
+						form.form-inline.navbar-form.pull-right
+							input.form-control(type="text", placeholder="请输入搜索内容")
+							button.btn.btn-secondary-outline(type="submit") 搜索
+				h3 自定义浅色主题样式 navbar-light background-color: #e3f2fd 
+				.row.bd-example
+					nav.navbar.navbar-light(style="background-color: #e3f2fd;")
+						a.navbar-brand(href="#") 商标
+						ul.nav.navbar-nav
+							li.nav-item.active
+								a.nav-link(href="#") 活跃链接1 
+							li.nav-item
+								a.nav-link(href="#") 链接2 
+							li.nav-item
+								a.nav-link(href="#") 链接3 
+							li.nav-item
+								a.nav-link(href="#") 链接4 
+						form.form-inline.navbar-form.pull-right
+							input.form-control(type="text", placeholder="请输入搜索内容")
+							button.btn.btn-primary-outline(type="submit") 搜索	
+				h2 可折叠的内容 		
+				.row.bd-example
+					nav.navbar.navbar-light(style="background-color: #e3f2fd;")
+						a.navbar-brand(href="#") 商标
+						ul.nav.navbar-nav
+							li.nav-item.active
+								a.nav-link(href="#") 活跃链接1 
+							li.nav-item
+								a.nav-link(href="#") 链接2 
+							li.nav-item
+								a.nav-link(href="#") 链接3 
+							li.nav-item
+								a.nav-link(href="#") 链接4 
+						form.form-inline.navbar-form.pull-right
+							input.form-control(type="text", placeholder="请输入搜索内容")
+							button.btn.btn-primary-outline(type="submit") 搜索						
