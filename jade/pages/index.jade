@@ -281,6 +281,44 @@ block content
 				.row.bd-example
 					button(type="button").btn.btn-primary.btn-block 全宽按钮
 					button(type="button").btn.btn-primary-outline.btn-block 全宽按钮
-
-
-
+				h3 按钮状态 button
+				.row.bd-example
+					h6 普通
+					button(type="button").btn.btn-primary Primary
+					button(type="button").btn.btn-secondary Secondary 
+					button(type="button").btn.btn-success Success
+					button(type="button").btn.btn-info Info
+					button(type="button").btn.btn-warning Warning
+					button(type="button").btn.btn-danger Danger
+					button(type="button").btn.btn-link Link
+				.row.bd-example
+					h6 激活
+					button(type="button").btn.btn-primary.active Primary
+					button(type="button").btn.btn-secondary.active Secondary 
+					button(type="button").btn.btn-success.active Success
+					button(type="button").btn.btn-info.active Info
+					button(type="button").btn.btn-warning.active Warning
+					button(type="button").btn.btn-danger.active Danger
+					button(type="button").btn.btn-link.active Link
+					.row.bd-example
+					h6 禁用
+					button(type="button",disabled).btn.btn-primary Primary
+					button(type="button",disabled).btn.btn-secondary Secondary 
+					button(type="button",disabled).btn.btn-success Success
+					button(type="button",disabled).btn.btn-info Info
+					button(type="button",disabled).btn.btn-warning Warning
+					button(type="button",disabled).btn.btn-danger Danger
+					button(type="button",disabled).btn.btn-link Link
+				h3 a标签状态 
+				.row.bd-example
+					a.btn.btn-primary(href="#", role="button") 普通
+					span &nbsp;
+					a.btn.btn-primary.active(href="#", role="button") 激活 
+					span &nbsp;
+					a.btn.btn-primary.disabled(href="#", role="button") 禁用
+				h3 切换状态 
+				.row.bd-example
+					button(type="button", data-toggle="button").btn.btn-primary 点击我切换状态
+					button(type="button").btn.btn-primary 普通
+					button(type="button").btn.btn-primary.active 激活
+					button(type="button",disabled).btn.btn-primary 禁用
