@@ -140,7 +140,7 @@ block content
 				p 导航栏，包括商标，菜单、搜索框等一系列组件，并可固定位置，以及自适应屏幕
 				p 导航栏总是横向排列，即使导航是用纵向模式，也会改为横向显示
 				h2 主题
-				h3 无色(白色)主题样式 navbar-light bg-faded
+				h3 无色(白色)主题样式 navbar-light bg-faded + 导航栏路径
 				.row.bd-example
 					nav.navbar.navbar-light.bg-faded
 						a.navbar-brand(href="#") 商标
@@ -156,6 +156,10 @@ block content
 						form.form-inline.navbar-form.pull-right
 							input.form-control(type="text", placeholder="请输入搜索内容")
 							button.btn.btn-success-outline(type="submit") 搜索
+					ol.breadcrumb
+						li: a(href="#") 首页
+						li: a(href="#") 分类
+						li.active 详情
 				h3 黑色主题样式 navbar-dark bg-inverse
 				.row.bd-example
 					nav.navbar.navbar-dark.bg-inverse
@@ -204,7 +208,8 @@ block content
 						form.form-inline.navbar-form.pull-right
 							input.form-control(type="text", placeholder="请输入搜索内容")
 							button.btn.btn-primary-outline(type="submit") 搜索	
-				h2 可折叠的内容 		
+				h2 其它 		
+				h3 可折叠的内容
 				.row.bd-example
 					nav.navbar.navbar-light(style="background-color: #e3f2fd;")
 						a.navbar-brand(href="#") 商标
@@ -215,7 +220,7 @@ block content
 								a.nav-link(href="#") 活跃链接1 
 							li.nav-item
 								a.nav-link(href="#") 链接2 
-							li.nav-item
+							li.navbar-fixed-bottom
 								a.nav-link(href="#") 链接3 
 							li.nav-item
 								a.nav-link(href="#") 链接4 
@@ -226,3 +231,56 @@ block content
 						.bg-inverse.p-a
 							h4 折叠的内容
 							span.text-muted 折叠的内容
+				h3 布局
+				p 固定在顶端 navbar-fixed-top
+				p 固定在底端 navbar-fixed-bottom
+				h1.bd-title 按钮与按钮组
+				p 提示用户选择的区域都可以显示为按钮样式
+				h2 按钮
+				h3 标准按钮 button
+				.row.bd-example
+					button(type="button").btn.btn-primary Primary
+					button(type="button").btn.btn-secondary Secondary 
+					button(type="button").btn.btn-success Success
+					button(type="button").btn.btn-info Info
+					button(type="button").btn.btn-warning Warning
+					button(type="button").btn.btn-danger Danger
+					button(type="button").btn.btn-link Link
+				.row
+					p 对button(非表单下的应用)只能用click事件，调用js，如果想跳转，要执行window.location='xxx'，或在外面包一层a标签
+				.row.bd-example
+					a(href="http://www.baidu.com")
+						button(type="button").btn.btn-primary baidu.com
+				h3 非button元素按钮 a input
+				.row.bd-example
+					a.btn.btn-primary(href="#", role="button") Link
+					button.btn.btn-primary(type="submit") Button submit
+					input.btn.btn-primary(type="button", value="Input")
+					input.btn.btn-primary(type="submit", value="Submit")
+				h3 无背景按钮 button
+				p 使用 .btn-*-outline
+				.row.bd-example
+					button(type="button").btn.btn-primary-outline Primary
+					button(type="button").btn.btn-secondary-outline Secondary 
+					button(type="button").btn.btn-success-outline Success
+					button(type="button").btn.btn-info-outline Info
+					button(type="button").btn.btn-warning-outline Warning
+					button(type="button").btn.btn-danger-outline Danger
+					button(type="button").btn.btn-link-outline Link
+				h3 尺寸
+				p btn-lg btn-sm
+				.row.bd-example
+					button(type="button").btn.btn-primary.btn-lg Large 
+					button(type="button").btn.btn-primary Default
+					button(type="button").btn.btn-primary.btn-sm Small
+					button(type="button").btn.btn-primary-outline.btn-lg Large 
+					button(type="button").btn.btn-primary-outline Default
+					button(type="button").btn.btn-primary-outline.btn-sm Small
+				h3 全宽按钮
+				p btn-block
+				.row.bd-example
+					button(type="button").btn.btn-primary.btn-block 全宽按钮
+					button(type="button").btn.btn-primary-outline.btn-block 全宽按钮
+
+
+

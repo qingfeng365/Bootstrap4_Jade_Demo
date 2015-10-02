@@ -123,7 +123,7 @@
         <p>导航栏，包括商标，菜单、搜索框等一系列组件，并可固定位置，以及自适应屏幕</p>
         <p>导航栏总是横向排列，即使导航是用纵向模式，也会改为横向显示</p>
         <h2>主题</h2>
-        <h3>无色(白色)主题样式 navbar-light bg-faded</h3>
+        <h3>无色(白色)主题样式 navbar-light bg-faded + 导航栏路径</h3>
         <div class="row bd-example">
           <nav class="navbar navbar-light bg-faded"><a href="#" class="navbar-brand">商标</a>
             <ul class="nav navbar-nav">
@@ -137,6 +137,11 @@
               <button type="submit" class="btn btn-success-outline">搜索</button>
             </form>
           </nav>
+          <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">分类</a></li>
+            <li class="active">详情</li>
+          </ol>
         </div>
         <h3>黑色主题样式 navbar-dark bg-inverse</h3>
         <div class="row bd-example">
@@ -183,7 +188,8 @@
             </form>
           </nav>
         </div>
-        <h2>可折叠的内容 		</h2>
+        <h2>其它 		</h2>
+        <h3>可折叠的内容</h3>
         <div class="row bd-example">
           <nav style="background-color: #e3f2fd;" class="navbar navbar-light"><a href="#" class="navbar-brand">商标</a>
             <ul class="nav navbar-nav">
@@ -192,7 +198,7 @@
               </li>
               <li class="nav-item active"><a href="#" class="nav-link">活跃链接1 </a></li>
               <li class="nav-item"><a href="#" class="nav-link">链接2 </a></li>
-              <li class="nav-item"><a href="#" class="nav-link">链接3 </a></li>
+              <li class="navbar-fixed-bottom"><a href="#" class="nav-link">链接3 </a></li>
               <li class="nav-item"><a href="#" class="nav-link">链接4 </a></li>
             </ul>
             <form class="form-inline navbar-form pull-right">
@@ -205,6 +211,60 @@
               <h4>折叠的内容</h4><span class="text-muted">折叠的内容</span>
             </div>
           </div>
+        </div>
+        <h3>布局</h3>
+        <p>固定在顶端 navbar-fixed-top</p>
+        <p>固定在底端 navbar-fixed-bottom</p>
+        <h1 class="bd-title">按钮与按钮组</h1>
+        <p>提示用户选择的区域都可以显示为按钮样式</p>
+        <h2>按钮</h2>
+        <h3>标准按钮 button</h3>
+        <div class="row bd-example">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary </button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div class="row">
+          <p>对button(非表单下的应用)只能用click事件，调用js，如果想跳转，要执行window.location='xxx'，或在外面包一层a标签</p>
+        </div>
+        <div class="row bd-example"><a href="http://www.baidu.com">
+            <button type="button" class="btn btn-primary">baidu.com</button></a></div>
+        <h3>非button元素按钮 a input</h3>
+        <div class="row bd-example"><a href="#" role="button" class="btn btn-primary">Link</a>
+          <button type="submit" class="btn btn-primary">Button submit</button>
+          <input type="button" value="Input" class="btn btn-primary">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+        <h3>无背景按钮 button</h3>
+        <p>使用 .btn-*-outline</p>
+        <div class="row bd-example">
+          <button type="button" class="btn btn-primary-outline">Primary</button>
+          <button type="button" class="btn btn-secondary-outline">Secondary </button>
+          <button type="button" class="btn btn-success-outline">Success</button>
+          <button type="button" class="btn btn-info-outline">Info</button>
+          <button type="button" class="btn btn-warning-outline">Warning</button>
+          <button type="button" class="btn btn-danger-outline">Danger</button>
+          <button type="button" class="btn btn-link-outline">Link</button>
+        </div>
+        <h3>尺寸</h3>
+        <p>btn-lg btn-sm</p>
+        <div class="row bd-example">
+          <button type="button" class="btn btn-primary btn-lg">Large </button>
+          <button type="button" class="btn btn-primary">Default</button>
+          <button type="button" class="btn btn-primary btn-sm">Small</button>
+          <button type="button" class="btn btn-primary-outline btn-lg">Large </button>
+          <button type="button" class="btn btn-primary-outline">Default</button>
+          <button type="button" class="btn btn-primary-outline btn-sm">Small</button>
+        </div>
+        <h3>全宽按钮</h3>
+        <p>btn-block</p>
+        <div class="row bd-example">
+          <button type="button" class="btn btn-primary btn-block">全宽按钮</button>
+          <button type="button" class="btn btn-primary-outline btn-block">全宽按钮</button>
         </div>
       </div>
     </div>
