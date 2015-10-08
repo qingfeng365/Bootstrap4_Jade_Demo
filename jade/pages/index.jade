@@ -220,13 +220,12 @@ block content
 								a.nav-link(href="#") 活跃链接1 
 							li.nav-item
 								a.nav-link(href="#") 链接2 
-							li.navbar-fixed-bottom
+							li.nav-item
 								a.nav-link(href="#") 链接3 
 							li.nav-item
 								a.nav-link(href="#") 链接4 
 						form.form-inline.navbar-form.pull-right
 							input.form-control(type="text", placeholder="请输入搜索内容")
-							button.btn.btn-primary-outline(type="submit") 搜索						
 					#exCollapsingNavbar.collapse
 						.bg-inverse.p-a
 							h4 折叠的内容
@@ -300,7 +299,7 @@ block content
 					button(type="button").btn.btn-warning.active Warning
 					button(type="button").btn.btn-danger.active Danger
 					button(type="button").btn.btn-link.active Link
-					.row.bd-example
+				.row.bd-example
 					h6 禁用
 					button(type="button",disabled).btn.btn-primary Primary
 					button(type="button",disabled).btn.btn-secondary Secondary 
@@ -322,3 +321,179 @@ block content
 					button(type="button").btn.btn-primary 普通
 					button(type="button").btn.btn-primary.active 激活
 					button(type="button",disabled).btn.btn-primary 禁用
+				h3 按钮式弹出菜单
+				p 在按钮与弹出菜单内容区包裹一层btn-group，按钮要指定.dropdown-toggle（设置了才会有小箭头），且data-toggle="dropdown"（设置了才会有弹出行为）
+				.row.bd-example
+					.btn-group
+						button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") secondary
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3
+					.btn-group
+						button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown") primary
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3		
+					.btn-group
+						button.btn.btn-success.dropdown-toggle(data-toggle="dropdown") success
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-info.dropdown-toggle(data-toggle="dropdown") info
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-warning.dropdown-toggle(data-toggle="dropdown") warning
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-danger.dropdown-toggle(data-toggle="dropdown") danger
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-link.dropdown-toggle(data-toggle="dropdown") link
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3			
+				h3 分割按钮式弹出菜单
+				.row.bd-example		
+					.btn-group
+						button.btn.btn-secondary secondary
+						button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3
+					.btn-group
+						button.btn.btn-primary primary
+						button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3		
+					.btn-group
+						button.btn.btn-success success
+						button.btn.btn-success.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-info info
+						button.btn.btn-info.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-warning warning
+						button.btn.btn-warning.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-danger danger
+						button.btn.btn-danger.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group
+						button.btn.btn-link link
+						button.btn.btn-link.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3
+				h3 按钮式弹出菜单向上弹出
+				.row.bd-example
+					.btn-group.dropup
+						button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown",type="button") primary
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3	
+					.btn-group.dropup
+						button.btn.btn-success success
+						button.btn.btn-success.dropdown-toggle(data-toggle="dropdown")
+						.dropdown-menu
+							a.dropdown-item(href="#") 链接1
+							a.dropdown-item(href="#") 链接2
+							.dropdown-divier
+							a.dropdown-item(href="#") 链接3													
+				h3 按钮组
+				.row.bd-example
+					.btn-group
+						button(type="button").btn.btn-secondary 左
+						button(type="button").btn.btn-secondary 中
+						button(type="button").btn.btn-secondary 右
+				.row.bd-example
+					.btn-toolbar
+						.btn-group.btn-group-lg
+							button(type="button").btn.btn-secondary 左
+							button(type="button").btn.btn-secondary 中
+							button(type="button").btn.btn-secondary 右
+						.btn-group
+							button(type="button").btn.btn-secondary 1
+							button(type="button").btn.btn-secondary 2
+							button(type="button").btn.btn-secondary 3
+							button(type="button").btn.btn-secondary 4
+						.btn-group.btn-group-sm
+							button(type="button").btn.btn-secondary 小
+				h3 按钮组合
+				p 在一个按钮组中，如果需要混合按钮与下拉菜单，可将下拉菜单做为单独一个btn-group嵌套为子group
+				.row.bd-example
+					.btn-group
+						button(type="button").btn.btn-secondary 1
+						button(type="button").btn.btn-secondary 2
+						.btn-group
+							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") 按钮式菜单
+							.dropdown-menu
+								a.dropdown-item(href="#") 链接1
+								a.dropdown-item(href="#") 链接2
+						.btn-group
+							button.btn.btn-secondary 分割式菜单
+							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown")
+							.dropdown-menu
+								a.dropdown-item(href="#") 链接1
+								a.dropdown-item(href="#") 链接2								
+				h3 垂直组合
+				p 不支持分割式弹出菜单
+				.row.bd-example
+					.btn-group-vertical
+						button(type="button").btn.btn-secondary 1
+						button(type="button").btn.btn-secondary 2
+						.btn-group
+							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") 下拉菜单
+							.dropdown-menu
+								a.dropdown-item(href="#") 链接1
+								a.dropdown-item(href="#") 链接2				
+						button(type="button").btn.btn-secondary 3
+						button(type="button").btn.btn-secondary 4

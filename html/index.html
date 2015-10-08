@@ -5,7 +5,7 @@
     <title>bootstrap 4 一览</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="../css/example.css" rel="stylesheet">
   </head>
   <body>
@@ -198,12 +198,11 @@
               </li>
               <li class="nav-item active"><a href="#" class="nav-link">活跃链接1 </a></li>
               <li class="nav-item"><a href="#" class="nav-link">链接2 </a></li>
-              <li class="navbar-fixed-bottom"><a href="#" class="nav-link">链接3 </a></li>
+              <li class="nav-item"><a href="#" class="nav-link">链接3 </a></li>
               <li class="nav-item"><a href="#" class="nav-link">链接4 </a></li>
             </ul>
             <form class="form-inline navbar-form pull-right">
               <input type="text" placeholder="请输入搜索内容" class="form-control">
-              <button type="submit" class="btn btn-primary-outline">搜索						</button>
             </form>
           </nav>
           <div id="exCollapsingNavbar" class="collapse">
@@ -286,7 +285,8 @@
           <button type="button" class="btn btn-warning active">Warning</button>
           <button type="button" class="btn btn-danger active">Danger</button>
           <button type="button" class="btn btn-link active">Link</button>
-          <div class="row bd-example"></div>
+        </div>
+        <div class="row bd-example">
           <h6>禁用</h6>
           <button type="button" disabled class="btn btn-primary">Primary</button>
           <button type="button" disabled class="btn btn-secondary">Secondary </button>
@@ -304,6 +304,177 @@
           <button type="button" class="btn btn-primary">普通</button>
           <button type="button" class="btn btn-primary active">激活</button>
           <button type="button" disabled class="btn btn-primary">禁用</button>
+        </div>
+        <h3>按钮式弹出菜单</h3>
+        <p>在按钮与弹出菜单内容区包裹一层btn-group，按钮要指定.dropdown-toggle（设置了才会有小箭头），且data-toggle="dropdown"（设置了才会有弹出行为）</p>
+        <div class="row bd-example">
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle">secondary</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">primary</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3		</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-success dropdown-toggle">success</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">info</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle">warning</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle">danger</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button data-toggle="dropdown" class="btn btn-link dropdown-toggle">link</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3			</a>
+            </div>
+          </div>
+        </div>
+        <h3>分割按钮式弹出菜单</h3>
+        <div class="row bd-example">		
+          <div class="btn-group">
+            <button class="btn btn-secondary">secondary</button>
+            <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-primary">primary</button>
+            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3		</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-success">success</button>
+            <button data-toggle="dropdown" class="btn btn-success dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-info">info</button>
+            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-warning">warning</button>
+            <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-danger">danger</button>
+            <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-link">link</button>
+            <button data-toggle="dropdown" class="btn btn-link dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3</a>
+            </div>
+          </div>
+        </div>
+        <h3>按钮式弹出菜单向上弹出</h3>
+        <div class="row bd-example">
+          <div class="btn-group dropup">
+            <button data-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle">primary</button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
+            </div>
+          </div>
+          <div class="btn-group dropup">
+            <button class="btn btn-success">success</button>
+            <button data-toggle="dropdown" class="btn btn-success dropdown-toggle"></button>
+            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
+              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3													</a>
+            </div>
+          </div>
+        </div>
+        <h3>按钮组</h3>
+        <div class="row bd-example">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">左</button>
+            <button type="button" class="btn btn-secondary">中</button>
+            <button type="button" class="btn btn-secondary">右</button>
+          </div>
+        </div>
+        <div class="row bd-example">
+          <div class="btn-toolbar">
+            <div class="btn-group btn-group-lg">
+              <button type="button" class="btn btn-secondary">左</button>
+              <button type="button" class="btn btn-secondary">中</button>
+              <button type="button" class="btn btn-secondary">右</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary">1</button>
+              <button type="button" class="btn btn-secondary">2</button>
+              <button type="button" class="btn btn-secondary">3</button>
+              <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="btn-group btn-group-sm">
+              <button type="button" class="btn btn-secondary">小</button>
+            </div>
+          </div>
+        </div>
+        <h3>按钮组合</h3>
+        <p>在一个按钮组中，如果需要混合按钮与下拉菜单，可将下拉菜单做为单独一个btn-group嵌套为子group</p>
+        <div class="row bd-example">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle">按钮式菜单</button>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a></div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-secondary">分割式菜单</button>
+              <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle"></button>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2								</a></div>
+            </div>
+          </div>
+        </div>
+        <h3>垂直组合</h3>
+        <p>不支持分割式弹出菜单</p>
+        <div class="row bd-example">
+          <div class="btn-group-vertical">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle">下拉菜单</button>
+              <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2				</a></div>
+            </div>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+          </div>
         </div>
       </div>
     </div>
