@@ -659,7 +659,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.bd-example > .dropdown > .dropdown-toggle {
+/*.bd-example > .dropdown > .dropdown-toggle {
     float: left;
 }
 .bd-example > .dropdown > .dropdown-menu {
@@ -667,7 +667,7 @@
     display: block;
     margin-bottom: 0.25rem;
     position: static;
-}
+}*/
 .bd-example-tabs .nav-tabs {
     margin-bottom: 1rem;
 }

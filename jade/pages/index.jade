@@ -321,6 +321,55 @@ block content
 					button(type="button").btn.btn-primary 普通
 					button(type="button").btn.btn-primary.active 激活
 					button(type="button",disabled).btn.btn-primary 禁用
+				h3 按钮组
+				.row.bd-example
+					.btn-group
+						button(type="button").btn.btn-secondary 左
+						button(type="button").btn.btn-secondary 中
+						button(type="button").btn.btn-secondary 右
+				.row.bd-example
+					.btn-toolbar
+						.btn-group.btn-group-lg
+							button(type="button").btn.btn-secondary 左
+							button(type="button").btn.btn-secondary 中
+							button(type="button").btn.btn-secondary 右
+						.btn-group
+							button(type="button").btn.btn-secondary 1
+							button(type="button").btn.btn-secondary 2
+							button(type="button").btn.btn-secondary 3
+							button(type="button").btn.btn-secondary 4
+						.btn-group.btn-group-sm
+							button(type="button").btn.btn-secondary 小
+				h3 按钮组合
+				p 在一个按钮组中，如果需要混合按钮与下拉菜单，可将下拉菜单做为单独一个btn-group嵌套为子group
+				.row.bd-example
+					.btn-group
+						button(type="button").btn.btn-secondary 1
+						button(type="button").btn.btn-secondary 2
+						.btn-group
+							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") 按钮式菜单
+							.dropdown-menu
+								a.dropdown-item(href="#") 链接1
+								a.dropdown-item(href="#") 链接2
+						.btn-group
+							button.btn.btn-secondary 分割式菜单
+							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown")
+							.dropdown-menu
+								a.dropdown-item(href="#") 链接1
+								a.dropdown-item(href="#") 链接2								
+				h3 垂直组合
+				p 不支持分割式弹出菜单
+				.row.bd-example
+					.btn-group-vertical
+						button(type="button").btn.btn-secondary 1
+						button(type="button").btn.btn-secondary 2
+						.btn-group
+							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") 下拉菜单
+							.dropdown-menu
+								a.dropdown-item(href="#") 链接1
+								a.dropdown-item(href="#") 链接2				
+						button(type="button").btn.btn-secondary 3
+						button(type="button").btn.btn-secondary 4
 				h3 按钮式弹出菜单
 				p 在按钮与弹出菜单内容区包裹一层btn-group，按钮要指定.dropdown-toggle（设置了才会有小箭头），且data-toggle="dropdown"（设置了才会有弹出行为）
 				.row.bd-example
@@ -430,56 +479,22 @@ block content
 							a.dropdown-item(href="#") 链接1
 							a.dropdown-item(href="#") 链接2
 							.dropdown-divier
-							a.dropdown-item(href="#") 链接3
-				h3 按钮组
+							a.dropdown-item(href="#") 链接3						
+				h3 弹出菜单详细说明
+				p 弹出菜单结构为 dropdown - dropdown-menu - dropdown-item
 				.row.bd-example
-					.btn-group
-						button(type="button").btn.btn-secondary 左
-						button(type="button").btn.btn-secondary 中
-						button(type="button").btn.btn-secondary 右
-				.row.bd-example
-					.btn-toolbar
-						.btn-group.btn-group-lg
-							button(type="button").btn.btn-secondary 左
-							button(type="button").btn.btn-secondary 中
-							button(type="button").btn.btn-secondary 右
-						.btn-group
-							button(type="button").btn.btn-secondary 1
-							button(type="button").btn.btn-secondary 2
-							button(type="button").btn.btn-secondary 3
-							button(type="button").btn.btn-secondary 4
-						.btn-group.btn-group-sm
-							button(type="button").btn.btn-secondary 小
-				h3 按钮组合
-				p 在一个按钮组中，如果需要混合按钮与下拉菜单，可将下拉菜单做为单独一个btn-group嵌套为子group
-				.row.bd-example
-					.btn-group
-						button(type="button").btn.btn-secondary 1
-						button(type="button").btn.btn-secondary 2
-						.btn-group
-							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") 按钮式菜单
-							.dropdown-menu
-								a.dropdown-item(href="#") 链接1
-								a.dropdown-item(href="#") 链接2
-						.btn-group
-							button.btn.btn-secondary 分割式菜单
-							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown")
-							.dropdown-menu
-								a.dropdown-item(href="#") 链接1
-								a.dropdown-item(href="#") 链接2								
-				h3 垂直组合
-				p 不支持分割式弹出菜单
-				.row.bd-example
-					.btn-group-vertical
-						button(type="button").btn.btn-secondary 1
-						button(type="button").btn.btn-secondary 2
-						.btn-group
-							button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown") 下拉菜单
-							.dropdown-menu
-								a.dropdown-item(href="#") 链接1
-								a.dropdown-item(href="#") 链接2				
-						button(type="button").btn.btn-secondary 3
-						button(type="button").btn.btn-secondary 4
+					.dropdown
+						button.btn.btn-secondary.dropdown-toggle(type="button",data-toggle="dropdown") 弹出菜单
+						.dropdown-menu
+							h6.dropdown-header 菜单头部内容1
+							a.dropdown-item(href="#") a标签菜单
+							button.dropdown-item(type="button") button标签菜单
+							h6.dropdown-header 菜单头部内容2
+							button.dropdown-item(type="button") 菜单3
+							button.dropdown-item(type="button") 菜单4
+							.dropdown-divier
+							button.dropdown-item(type="button") 菜单5
+							button.dropdown-item.disabled(type="button") 禁用菜单6
 				h1.bd-title 表单
 				h3 水平表单
 				.row.bd-example
