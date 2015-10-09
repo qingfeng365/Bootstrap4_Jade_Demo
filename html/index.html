@@ -465,25 +465,275 @@
         <div class="row bd-example">
           <form>
             <div class="form-group row">
+              <p>每个输入框,都需要定义name属性</p>
+            </div>
+            <div class="form-group row">
               <label class="form-control-label col-sm-2">文本</label>
               <div class="col-sm-10">
-                <input type="text" placeholder="" class="form-control">
+                <input type="text" name="textInput" placeholder="" class="form-control">
+                <p class="text-muted">这是一段说明性文字,颜色较浅</p>
               </div>
             </div>
             <div class="form-group row">
               <label class="form-control-label col-sm-2">邮件</label>
               <div class="col-sm-10">
-                <input type="email" placeholder="xxx@abc.com" class="form-control">
+                <input type="email" name="emailInput" placeholder="xxx@abc.com" class="form-control">
               </div>
             </div>
             <div class="form-group row">
               <label class="form-control-label col-sm-2">密码</label>
               <div class="col-sm-10">
-                <input type="password" placeholder="请输入密码" class="form-control">
+                <input type="password" name="passwordInput" placeholder="请输入密码" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">只读</label>
+              <div class="col-sm-10">
+                <input type="text" name="textInputreadonly" placeholder="这是一个只读文本框" readonly class="form-control">
+              </div>
+            </div>
+            <div class="form-group row has-success">
+              <label class="form-control-label col-sm-2">验证成功</label>
+              <div class="col-sm-10">
+                <input type="text" name="textInputsuccess" placeholder="" class="form-control form-control-success">
+              </div>
+            </div>
+            <div class="form-group row has-warning">
+              <label class="form-control-label col-sm-2">验证警告</label>
+              <div class="col-sm-10">
+                <input type="text" name="textInputwarning" placeholder="" class="form-control form-control-warning">
+              </div>
+            </div>
+            <div class="form-group row has-error">
+              <label class="form-control-label col-sm-2">验证失败</label>
+              <div class="col-sm-10">
+                <input type="text" name="textInputerror" placeholder="" class="form-control form-control-error">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">静态文本</label>
+              <div class="col-sm-10">
+                <p class="form-control-static">email@example.com</p>
               </div>
             </div>
             <div class="form-group row">
               <label class="form-control-label col-sm-2">单选</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radioInput" value="option1" checked> option1 选项1	选中状态
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radioInput" value="option2"> option2 选项2	普通状态
+                  </label>
+                </div>
+                <div class="radio disabled">
+                  <label>
+                    <input type="radio" name="radioInput" value="option3" disabled> option3 选项3	禁用状态
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">单选内联</label>
+              <div class="col-sm-10">
+                <div class="radio-inline">
+                  <label>
+                    <input type="radio" name="inradioInput" value="option1" checked> option1 选项1	选中状态
+                  </label>
+                </div>
+                <div class="radio-inline">
+                  <label>
+                    <input type="radio" name="inradioInput" value="option2"> option2 选项2	普通状态
+                  </label>
+                  <label>
+                    <input type="radio" name="inradioInput" value="option3" disabled> option3 选项3	禁用状态
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">检查框1</label>
+              <div class="col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkboxInput1" value="check1" checked> 检查值1 选中状态
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">检查框2</label>
+              <div class="col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="checkboxInput2" value="check2"> 检查值2
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">检查框3</label>
+              <div class="col-sm-10">
+                <div class="checkbox disabled">
+                  <label>
+                    <input type="checkbox" name="checkboxInput3" value="check3" disabled> 检查值3	禁用状态	
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">检查框内联</label>
+              <div class="col-sm-10">
+                <div class="checkbox-inline">
+                  <label>
+                    <input type="checkbox" name="incheckboxInput1" value="check1" checked> 检查值1 选中状态
+                  </label>
+                </div>
+                <div class="checkbox-inline">
+                  <label>
+                    <input type="checkbox" name="incheckboxInput2" value="check2"> 检查值2
+                  </label>
+                </div>
+                <div class="checkbox-inline disabled">
+                  <label>
+                    <input type="checkbox" name="incheckboxInput3" value="check3" disabled> 检查值3	禁用状态 
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">无标签单选检查</label>
+              <div class="col-sm-10">
+                <div class="checkbox-inline">
+                  <label>
+                    <input type="checkbox" name="incheckboxInputnotag1" value="check1">
+                  </label>
+                </div>
+                <div class="checkbox-inline">
+                  <label>
+                    <input type="checkbox" name="incheckboxInputnotag2" value="check2">
+                  </label>
+                </div>
+                <div class="radio-inline">
+                  <label>
+                    <input type="radio" name="inradioInput" value="option1" checked>
+                  </label>
+                </div>
+                <div class="radio-inline">
+                  <label>
+                    <input type="radio" name="inradioInput" value="option2">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-sm-2">检查框优化样式				</label>
+              <div class="col-sm-10">
+                <label class="c-input c-checkbox">
+                  <input type="checkbox" name="checkboxInputbyc" value="checkc"><span class="c-indicator"></span>样式优化的检查框值	
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-sm-2">单选框优化样式				</label>
+              <div class="col-sm-10">
+                <label class="c-input c-radio">
+                  <input type="radio" name="radioInputbyc" value="1"><span class="c-indicator"></span>样式优化的单选框1
+                </label>
+                <label class="c-input c-radio">
+                  <input type="radio" name="radioInputbyc" value="2"><span class="c-indicator"></span>样式优化的单选框2																	
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">下拉框</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">下拉框优化样式</label>
+              <div class="col-sm-10">
+                <select class="form-control c-select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5									</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">多选框</label>
+              <div class="col-sm-10">
+                <select multiple class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5									</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">文本多行</label>
+              <div class="col-sm-10">
+                <textarea class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">文件</label>
+              <div class="col-sm-10">
+                <input type="file" class="form-control-file">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">文件优化样式</label>
+              <div class="col-sm-10">
+                <label class="file">
+                  <input type="file"><span class="file-custom"></span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10 col-sm-offset-2">
+                <button type="submit" class="btn btn-secondary">提交</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <h3>垂直表单(默认形式)</h3>
+        <div class="row bd-example">
+          <form>
+            <div class="form-group">
+              <label>标签1</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>标签2</label>
+              <input type="text" class="form-control">
+            </div>
+          </form>
+        </div>
+        <h3>内联表单</h3>
+        <div class="row bd-example">
+          <form class="form-inline">
+            <div class="form-group">
+              <label>标签1</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>标签2</label>
+              <input type="text" class="form-control">
             </div>
           </form>
         </div>
