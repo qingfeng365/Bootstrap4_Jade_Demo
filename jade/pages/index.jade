@@ -374,7 +374,7 @@ block content
 							.dropdown-divier
 							a.dropdown-item(href="#") 链接3			
 				h3 分割按钮式弹出菜单
-				.row.bd-example		
+				.row.bd-example
 					.btn-group
 						button.btn.btn-secondary secondary
 						button.btn.btn-secondary.dropdown-toggle(data-toggle="dropdown")
@@ -431,23 +431,6 @@ block content
 							a.dropdown-item(href="#") 链接2
 							.dropdown-divier
 							a.dropdown-item(href="#") 链接3
-				h3 按钮式弹出菜单向上弹出
-				.row.bd-example
-					.btn-group.dropup
-						button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown",type="button") primary
-						.dropdown-menu
-							a.dropdown-item(href="#") 链接1
-							a.dropdown-item(href="#") 链接2
-							.dropdown-divier
-							a.dropdown-item(href="#") 链接3	
-					.btn-group.dropup
-						button.btn.btn-success success
-						button.btn.btn-success.dropdown-toggle(data-toggle="dropdown")
-						.dropdown-menu
-							a.dropdown-item(href="#") 链接1
-							a.dropdown-item(href="#") 链接2
-							.dropdown-divier
-							a.dropdown-item(href="#") 链接3													
 				h3 按钮组
 				.row.bd-example
 					.btn-group
@@ -497,3 +480,22 @@ block content
 								a.dropdown-item(href="#") 链接2				
 						button(type="button").btn.btn-secondary 3
 						button(type="button").btn.btn-secondary 4
+				h1.bd-title 表单
+				h3 水平表单
+				.row.bd-example
+					form
+						.form-group.row
+							label.form-control-label.col-sm-2 文本
+							.col-sm-10
+								input.form-control(type="text",placeholder="")
+						.form-group.row
+							label.form-control-label.col-sm-2 邮件
+							.col-sm-10
+								input.form-control(type="email",placeholder="xxx@abc.com")
+						.form-group.row
+							label.form-control-label.col-sm-2 密码
+							.col-sm-10
+								input.form-control(type="password",placeholder="请输入密码")
+						.form-group.row
+							label.form-control-label.col-sm-2 单选
+							

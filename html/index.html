@@ -5,7 +5,7 @@
     <title>bootstrap 4 一览</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/example.css" rel="stylesheet">
   </head>
   <body>
@@ -352,7 +352,7 @@
           </div>
         </div>
         <h3>分割按钮式弹出菜单</h3>
-        <div class="row bd-example">		
+        <div class="row bd-example">
           <div class="btn-group">
             <button class="btn btn-secondary">secondary</button>
             <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle"></button>
@@ -400,22 +400,6 @@
             <button data-toggle="dropdown" class="btn btn-link dropdown-toggle"></button>
             <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
               <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3</a>
-            </div>
-          </div>
-        </div>
-        <h3>按钮式弹出菜单向上弹出</h3>
-        <div class="row bd-example">
-          <div class="btn-group dropup">
-            <button data-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle">primary</button>
-            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
-              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3	</a>
-            </div>
-          </div>
-          <div class="btn-group dropup">
-            <button class="btn btn-success">success</button>
-            <button data-toggle="dropdown" class="btn btn-success dropdown-toggle"></button>
-            <div class="dropdown-menu"><a href="#" class="dropdown-item">链接1</a><a href="#" class="dropdown-item">链接2</a>
-              <div class="dropdown-divier"></div><a href="#" class="dropdown-item">链接3													</a>
             </div>
           </div>
         </div>
@@ -475,6 +459,33 @@
             <button type="button" class="btn btn-secondary">3</button>
             <button type="button" class="btn btn-secondary">4</button>
           </div>
+        </div>
+        <h1 class="bd-title">表单</h1>
+        <h3>水平表单</h3>
+        <div class="row bd-example">
+          <form>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">文本</label>
+              <div class="col-sm-10">
+                <input type="text" placeholder="" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">邮件</label>
+              <div class="col-sm-10">
+                <input type="email" placeholder="xxx@abc.com" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">密码</label>
+              <div class="col-sm-10">
+                <input type="password" placeholder="请输入密码" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-2">单选</label>
+            </div>
+          </form>
         </div>
       </div>
     </div>
