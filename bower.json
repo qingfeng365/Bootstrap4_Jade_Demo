@@ -21,6 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "4.0.0-alpha"
+    "bootstrap": "4.0.0-alpha",
+    "holderjs": "~2.8.2"
   }
 }

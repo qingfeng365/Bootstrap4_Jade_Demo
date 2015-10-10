@@ -673,6 +673,86 @@ block content
 								label.file
 									input(type="file")
 									span.file-custom
+						.row
+							p 以下是输入框组样式				
+						.form-group.row
+							label.form-control-label.col-sm-2 装饰符号
+							.col-sm-10
+								.input-group
+									span.input-group-addon @
+									input.form-control(type="text", placeholder="请输入用户名")
+						.form-group.row
+							label.form-control-label.col-sm-2 装饰符号
+							.col-sm-10
+								.input-group
+									input.form-control(type="text", placeholder="请输入用户名")
+									span.input-group-addon @
+						.form-group.row
+							label.form-control-label.col-sm-2 装饰符号
+							.col-sm-10
+								.input-group
+									span.input-group-addon https://example.com/users/
+									input.form-control(type="text", placeholder="")
+						.form-group.row
+							label.form-control-label.col-sm-2 装饰符号
+							.col-sm-10
+								.input-group
+									span.input-group-addon ¥
+									input.form-control(type="text", placeholder="")
+									span.input-group-addon .00									
+						.form-group.row
+							label.form-control-label.col-sm-2 附加检查框
+							.col-sm-10
+								.input-group
+									span.input-group-addon
+										input(type="checkbox")
+									input.form-control(type="text", placeholder="")
+						.form-group.row
+							label.form-control-label.col-sm-2 附加单选框
+							.col-sm-10
+								.input-group
+									span.input-group-addon
+										input(type="radio")
+									input.form-control(type="text", placeholder="")
+						.form-group.row
+							label.form-control-label.col-sm-2 附加按钮
+							.col-sm-10
+								.input-group
+									span.input-group-btn
+										button.btn.btn-secondary(type="button") Go
+									input.form-control(type="text", placeholder="请输入查询内容...")
+						.form-group.row
+							label.form-control-label.col-sm-2 附加按钮
+							.col-sm-10
+								.input-group
+									input.form-control(type="text", placeholder="请输入查询内容...")
+									span.input-group-btn
+										button.btn.btn-secondary(type="button") Go
+						.form-group.row
+							label.form-control-label.col-sm-2 附加菜单
+							.col-sm-10
+								.input-group
+									.input-group-btn
+										button.btn.btn-secondary.dropdown-toggle(type="button",data-toggle="dropdown") 选项
+										.dropdown-menu
+											a.dropdown-item(href="#") 选项1
+											a.dropdown-item(href="#") 选项2
+											.dropdown-divier
+											a.dropdown-item(href="#") 选项3			
+									input.form-control(type="text", placeholder="")
+						.form-group.row
+							label.form-control-label.col-sm-2 附加菜单
+							.col-sm-10
+								.input-group
+									input.form-control(type="text", placeholder="")
+									.input-group-btn
+										button.btn.btn-secondary.dropdown-toggle(type="button",data-toggle="dropdown") 选项
+										.dropdown-menu
+											a.dropdown-item(href="#") 选项1
+											a.dropdown-item(href="#") 选项2
+											.dropdown-divier
+											a.dropdown-item(href="#") 选项3			
+								p.text-muted .input-group-btn要用div标签,不能使用span,且不需要用.dropdown包裹			
 						.form-group.row
 							.col-sm-10.col-sm-offset-2
 								button.btn.btn-secondary(type="submit") 提交
@@ -694,6 +774,49 @@ block content
 						.form-group
 							label 标签2
 							input.form-control(type="text")
-
-							
-
+				h1.bd-title 卡片
+				p 图文混排效果统一用卡片处理,代替了旧的panel、well和thumbnail。
+				h3 基本卡片
+				.row.bd-example
+					.card
+						img.card-img-top(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+						.card-block
+							h4.card-title 卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
+							a.btn.btn-primary(href="#") 执行
+				h3 卡片+列组
+				.row.bd-example
+					.card
+						img.card-img-top(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+						.card-block
+							h4.card-title 卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
+						ul.list-group.list-group-flush
+							li.list-group-item 项目1
+							li.list-group-item 项目2
+							li.list-group-item 项目3
+						.card-block
+							a.card-link(href="#") 链接1
+							a.card-link(href="#") 链接2
+				h3 简易图文
+				.row.bd-example
+					.card
+						img.card-img-top(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+						.card-block
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
+				h3 无图卡片
+				.row.bd-example
+					.card.card-block
+						h4.card-title 卡片标题
+						p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+						a.card-link(href="#") 链接1
+						a.card-link(href="#") 链接2
+				h3 图在中间
+				.row.bd-example
+					.card
+						.card-block
+							h4.card-title 卡片标题
+						img(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+						.card-block
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
+							a.btn.btn-primary(href="#") 执行
