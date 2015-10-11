@@ -909,10 +909,10 @@ block content
 							.card-block
 								h4.card-title 卡片标题
 								p.card-text 卡片详细内容
-								blockquote.card-blockquote					
+								blockquote.card-blockquote
 									p 卡片附加内容
 									footer 脚注来自	
-										cite(title="原文")原文
+										cite(title="原文") 原文
 								a.card-link(href="#") 链接1
 								a.card-link(href="#") 链接2							
 					.col-sm-2
@@ -922,10 +922,10 @@ block content
 							.card-block
 								h4.card-title 卡片标题
 								p.card-text 卡片详细内容
-								blockquote.card-blockquote					
+								blockquote.card-blockquote
 									p 卡片附加内容
 									footer 脚注来自	
-										cite(title="原文")原文
+										cite(title="原文") 原文
 								a.card-link(href="#") 链接1
 								a.card-link(href="#") 链接2								
 					.col-sm-2
@@ -935,10 +935,10 @@ block content
 							.card-block
 								h4.card-title 卡片标题
 								p.card-text 卡片详细内容
-								blockquote.card-blockquote					
+								blockquote.card-blockquote
 									p 卡片附加内容
 									footer 脚注来自	
-										cite(title="原文")原文
+										cite(title="原文") 原文
 								a.card-link(href="#") 链接1
 								a.card-link(href="#") 链接2								
 					.col-sm-2
@@ -948,10 +948,10 @@ block content
 							.card-block
 								h4.card-title 卡片标题
 								p.card-text 卡片详细内容
-								blockquote.card-blockquote					
+								blockquote.card-blockquote
 									p 卡片附加内容
 									footer 脚注来自	
-										cite(title="原文")原文
+										cite(title="原文") 原文
 								a.card-link(href="#") 链接1
 								a.card-link(href="#") 链接2								
 					.col-sm-2
@@ -961,17 +961,121 @@ block content
 							.card-block
 								h4.card-title 卡片标题
 								p.card-text 卡片详细内容
-								blockquote.card-blockquote					
+								blockquote.card-blockquote
 									p 卡片附加内容
 									footer 脚注来自	
-										cite(title="原文")原文
+										cite(title="原文") 原文
 								a.card-link(href="#") 链接1
 								a.card-link(href="#") 链接2									
 				h3 卡片组
-				.row.bd-example							
-
+				p 多个卡片会呈现挤压效果
+				.row
+					.card-group
+						.card
+							img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前								
+						.card
+							img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前								
 				h3 卡片平排
-				.row.bd-example		
-
+				p 多个卡片会呈现向右扩展效果
+				.row
+					.card-deck-wrapper
+						.card-deck
+							.card
+								img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+								.card-block
+									h4.card-title 卡片标题
+									p.card-text 卡片详细内容,卡片详细内容
+									p.card-text: Small.text-muted 最后更新在3分钟前	
+							.card
+								img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+								.card-block
+									h4.card-title 卡片标题
+									p.card-text 卡片详细内容,卡片详细内容
+									p.card-text: Small.text-muted 最后更新在3分钟前										
+							.card
+								img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+								.card-block
+									h4.card-title 卡片标题
+									p.card-text 卡片详细内容,卡片详细内容
+									p.card-text: Small.text-muted 最后更新在3分钟前										
+							.card
+								img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+								.card-block
+									h4.card-title 卡片标题
+									p.card-text 卡片详细内容,卡片详细内容
+									p.card-text: Small.text-muted 最后更新在3分钟前										
 				h3 卡片瀑布流
+				.row
+					.card-columns
+						.card
+							img.card-img-top(data-src="holder.js/260x200/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题1
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/260x220/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题2
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/160x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题3
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题4
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/260x380/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题5
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题6
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+						.card
+							img.card-img-top(data-src="holder.js/260x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题7
+								p.card-text 卡片详细内容,卡片详细内容
+								p.card-text: Small.text-muted 最后更新在3分钟前
+				h1.bd-title 图片
 				.row.bd-example
+					img.img-rounded.pull-left(data-src="holder.js/200x200/?theme=industrial", alt="image")
+					img.img-thumbnail.pull-right(data-src="holder.js/200x200/?theme=industrial", alt="image")
+				.row.bd-example
+					.text-center
+						img.img-circle(data-src="holder.js/200x200/?theme=industrial", alt="image")
+				h1.bd-title 图文框
+				.row.bd-example
+					figure.figure
+						img.img-rounded(data-src="holder.js/400x300/?theme=industrial", alt="image")
+						figcaption.figure-caption 图片标题
+				.row.bd-example
+					figure.figure
+						img.img-rounded(data-src="holder.js/400x300/?theme=industrial", alt="image")
+						figcaption.figure-caption.text-right 图片标题
