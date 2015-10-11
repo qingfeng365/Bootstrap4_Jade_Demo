@@ -776,12 +776,13 @@ block content
 							input.form-control(type="text")
 				h1.bd-title 卡片
 				p 图文混排效果统一用卡片处理,代替了旧的panel、well和thumbnail。
+				p 注意，卡片默认是横向充满的，下面示例是example.css增加了样式.bd-example > .card {max-width: 320px}
 				h3 基本卡片
 				.row.bd-example
 					.card
 						img.card-img-top(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
 						.card-block
-							h4.card-title 卡片标题
+							h4.card-title 卡片标题卡片标题卡片标题
 							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
 							a.btn.btn-primary(href="#") 执行
 				h3 卡片+列组
@@ -789,7 +790,7 @@ block content
 					.card
 						img.card-img-top(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
 						.card-block
-							h4.card-title 卡片标题
+							h4.card-title 卡片标题卡片标题卡片标题
 							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
 						ul.list-group.list-group-flush
 							li.list-group-item 项目1
@@ -807,7 +808,7 @@ block content
 				h3 无图卡片
 				.row.bd-example
 					.card.card-block
-						h4.card-title 卡片标题
+						h4.card-title 卡片标题卡片标题卡片标题
 						p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
 						a.card-link(href="#") 链接1
 						a.card-link(href="#") 链接2
@@ -815,8 +816,162 @@ block content
 				.row.bd-example
 					.card
 						.card-block
-							h4.card-title 卡片标题
+							h4.card-title 卡片标题卡片标题卡片标题
+							h6.card-subtitle.text-muted 卡片子标题并应用.text-muted
 						img(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
 						.card-block
 							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容
+							a.card-link(href="#") 链接1
+							a.card-link(href="#") 链接2
+				h3 用网格控制卡片宽度			
+				.row
+					.col-sm-6
+						.card.card-block
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+							a.card-link(href="#") 链接1
+							a.card-link(href="#") 链接2						
+					.col-sm-6
+						.card.card-block
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+							a.card-link(href="#") 链接1
+							a.card-link(href="#") 链接2	
+				h3 自定义宽度
+				.row
+					.card.card-block(style="width: 25rem;")
+						h4.card-title 卡片标题卡片标题卡片标题
+						p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+						a.card-link(href="#") 链接1
+						a.card-link(href="#") 链接2	
+				h3 文本对齐		
+				.row
+					.col-sm-4
+						.card.card-block
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
 							a.btn.btn-primary(href="#") 执行
+					.col-sm-4
+						.card.card-block.text-center
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+							a.btn.btn-primary(href="#") 执行												
+					.col-sm-4
+						.card.card-block.text-right
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+							a.btn.btn-primary(href="#") 执行								
+				h3 片头片脚			
+				.row.bd-example
+					.card.text-center
+						.card-header 特性说明
+						.card-block
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+							a.btn.btn-primary(href="#") 执行				
+						.card-footer.text-muted 2 days ago
+				h3 图片位置		
+				.row
+					.col-sm-4
+						.card
+							img.card-img-top(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+							.card-block
+								h4.card-title 卡片标题卡片标题卡片标题
+								p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+								p.card-text: Small.text-muted 最后更新在3分钟前
+					.col-sm-4
+						.card
+							.card-block
+								h4.card-title 卡片标题卡片标题卡片标题
+								p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+								p.card-text: Small.text-muted 最后更新在3分钟前										
+							img.card-img-bottom(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+					.col-sm-4
+						.card.card-inverse
+							img.card-img(data-src="holder.js/318x180/?theme=industrial", alt="Card image")
+							.card-img-overlay
+								h4.card-title 卡片标题卡片标题卡片标题
+								p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+								p.card-text: Small.text-muted 最后更新在3分钟前	
+				h3 指定背景色			
+				.row.bd-example
+					.card.card-inverse(style="background-color: #333; border-color: #333;")
+						.card-block
+							h4.card-title 卡片标题卡片标题卡片标题
+							p.card-text 卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							
+							a.btn.btn-primary(href="#") 执行					
+				h3 预置的卡片颜色
+				.row.bd-example
+					.col-sm-2
+						.card.card-inverse.card-primary.text-center
+							.card-block
+								p.card-text card-primary card-inverse
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容
+								blockquote.card-blockquote					
+									p 卡片附加内容
+									footer 脚注来自	
+										cite(title="原文")原文
+								a.card-link(href="#") 链接1
+								a.card-link(href="#") 链接2							
+					.col-sm-2
+						.card.card-inverse.card-success.text-center
+							.card-block
+								p.card-text card-success card-inverse
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容
+								blockquote.card-blockquote					
+									p 卡片附加内容
+									footer 脚注来自	
+										cite(title="原文")原文
+								a.card-link(href="#") 链接1
+								a.card-link(href="#") 链接2								
+					.col-sm-2
+						.card.card-inverse.card-info.text-center
+							.card-block
+								p.card-text card-info card-inverse
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容
+								blockquote.card-blockquote					
+									p 卡片附加内容
+									footer 脚注来自	
+										cite(title="原文")原文
+								a.card-link(href="#") 链接1
+								a.card-link(href="#") 链接2								
+					.col-sm-2
+						.card.card-inverse.card-warning.text-center
+							.card-block
+								p.card-text card-warning card-inverse
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容
+								blockquote.card-blockquote					
+									p 卡片附加内容
+									footer 脚注来自	
+										cite(title="原文")原文
+								a.card-link(href="#") 链接1
+								a.card-link(href="#") 链接2								
+					.col-sm-2
+						.card.card-inverse.card-danger.text-center
+							.card-block
+								p.card-text card-danger card-inverse
+							.card-block
+								h4.card-title 卡片标题
+								p.card-text 卡片详细内容
+								blockquote.card-blockquote					
+									p 卡片附加内容
+									footer 脚注来自	
+										cite(title="原文")原文
+								a.card-link(href="#") 链接1
+								a.card-link(href="#") 链接2									
+				h3 卡片组
+				.row.bd-example							
+
+				h3 卡片平排
+				.row.bd-example		
+
+				h3 卡片瀑布流
+				.row.bd-example

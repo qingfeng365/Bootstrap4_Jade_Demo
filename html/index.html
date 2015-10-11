@@ -856,11 +856,12 @@
         </div>
         <h1 class="bd-title">卡片</h1>
         <p>图文混排效果统一用卡片处理,代替了旧的panel、well和thumbnail。</p>
+        <p>注意，卡片默认是横向充满的，下面示例是example.css增加了样式.bd-example > .card {max-width: 320px}</p>
         <h3>基本卡片</h3>
         <div class="row bd-example">
           <div class="card"><img data-src="holder.js/318x180/?theme=industrial" alt="Card image" class="card-img-top">
             <div class="card-block">
-              <h4 class="card-title">卡片标题</h4>
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
               <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容</p><a href="#" class="btn btn-primary">执行</a>
             </div>
           </div>
@@ -869,7 +870,7 @@
         <div class="row bd-example">
           <div class="card"><img data-src="holder.js/318x180/?theme=industrial" alt="Card image" class="card-img-top">
             <div class="card-block">
-              <h4 class="card-title">卡片标题</h4>
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
               <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容</p>
             </div>
             <ul class="list-group list-group-flush">
@@ -891,7 +892,7 @@
         <h3>无图卡片</h3>
         <div class="row bd-example">
           <div class="card card-block">
-            <h4 class="card-title">卡片标题</h4>
+            <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
             <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2</a>
           </div>
         </div>
@@ -899,13 +900,207 @@
         <div class="row bd-example">
           <div class="card">
             <div class="card-block">
-              <h4 class="card-title">卡片标题</h4>
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <h6 class="card-subtitle text-muted">卡片子标题并应用.text-muted</h6>
             </div><img data-src="holder.js/318x180/?theme=industrial" alt="Card image">
             <div class="card-block">
-              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容</p><a href="#" class="btn btn-primary">执行</a>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容</p><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2</a>
             </div>
           </div>
         </div>
+        <h3>用网格控制卡片宽度			</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card card-block">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2						</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card card-block">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2	</a>
+            </div>
+          </div>
+        </div>
+        <h3>自定义宽度</h3>
+        <div class="row">
+          <div style="width: 25rem;" class="card card-block">
+            <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+            <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2	</a>
+          </div>
+        </div>
+        <h3>文本对齐		</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card card-block">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="btn btn-primary">执行</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card card-block text-center">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="btn btn-primary">执行												</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card card-block text-right">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="btn btn-primary">执行								</a>
+            </div>
+          </div>
+        </div>
+        <h3>片头片脚			</h3>
+        <div class="row bd-example">
+          <div class="card text-center">
+            <div class="card-header">特性说明</div>
+            <div class="card-block">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="btn btn-primary">执行				</a>
+            </div>
+            <div class="card-footer text-muted">2 days ago</div>
+          </div>
+        </div>
+        <h3>图片位置		</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card"><img data-src="holder.js/318x180/?theme=industrial" alt="Card image" class="card-img-top">
+              <div class="card-block">
+                <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+                <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p>
+                <p class="card-text">
+                  <Small class="text-muted">最后更新在3分钟前</Small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+                <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p>
+                <p class="card-text">
+                  <Small class="text-muted">最后更新在3分钟前										</Small>
+                </p>
+              </div><img data-src="holder.js/318x180/?theme=industrial" alt="Card image" class="card-img-bottom">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card card-inverse"><img data-src="holder.js/318x180/?theme=industrial" alt="Card image" class="card-img">
+              <div class="card-img-overlay">
+                <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+                <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p>
+                <p class="card-text">
+                  <Small class="text-muted">最后更新在3分钟前	</Small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>指定背景色			</h3>
+        <div class="row bd-example">
+          <div style="background-color: #333; border-color: #333;" class="card card-inverse">
+            <div class="card-block">
+              <h4 class="card-title">卡片标题卡片标题卡片标题</h4>
+              <p class="card-text">卡片详细内容,卡片详细内容,卡片详细内容,卡片详细内容							</p><a href="#" class="btn btn-primary">执行					</a>
+            </div>
+          </div>
+        </div>
+        <h3>预置的卡片颜色</h3>
+        <div class="row bd-example">
+          <div class="col-sm-2">
+            <div class="card card-inverse card-primary text-center">
+              <div class="card-block">
+                <p class="card-text">card-primary card-inverse</p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">卡片标题</h4>
+                <p class="card-text">卡片详细内容</p>
+                <blockquote class="card-blockquote">					
+                  <p>卡片附加内容</p>
+                  <footer>脚注来自	
+                    <cite title="原文">原文</cite>
+                  </footer>
+                </blockquote><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2							</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-inverse card-success text-center">
+              <div class="card-block">
+                <p class="card-text">card-success card-inverse</p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">卡片标题</h4>
+                <p class="card-text">卡片详细内容</p>
+                <blockquote class="card-blockquote">					
+                  <p>卡片附加内容</p>
+                  <footer>脚注来自	
+                    <cite title="原文">原文</cite>
+                  </footer>
+                </blockquote><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2								</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-inverse card-info text-center">
+              <div class="card-block">
+                <p class="card-text">card-info card-inverse</p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">卡片标题</h4>
+                <p class="card-text">卡片详细内容</p>
+                <blockquote class="card-blockquote">					
+                  <p>卡片附加内容</p>
+                  <footer>脚注来自	
+                    <cite title="原文">原文</cite>
+                  </footer>
+                </blockquote><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2								</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-inverse card-warning text-center">
+              <div class="card-block">
+                <p class="card-text">card-warning card-inverse</p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">卡片标题</h4>
+                <p class="card-text">卡片详细内容</p>
+                <blockquote class="card-blockquote">					
+                  <p>卡片附加内容</p>
+                  <footer>脚注来自	
+                    <cite title="原文">原文</cite>
+                  </footer>
+                </blockquote><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2								</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-inverse card-danger text-center">
+              <div class="card-block">
+                <p class="card-text">card-danger card-inverse</p>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">卡片标题</h4>
+                <p class="card-text">卡片详细内容</p>
+                <blockquote class="card-blockquote">					
+                  <p>卡片附加内容</p>
+                  <footer>脚注来自	
+                    <cite title="原文">原文</cite>
+                  </footer>
+                </blockquote><a href="#" class="card-link">链接1</a><a href="#" class="card-link">链接2									</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>卡片组</h3>
+        <div class="row bd-example">							</div>
+        <h3>卡片平排</h3>
+        <div class="row bd-example">		</div>
+        <h3>卡片瀑布流</h3>
+        <div class="row bd-example"></div>
       </div>
     </div>
     <script src="../bower_components/jquery/dist/jquery.min.js"> </script>
