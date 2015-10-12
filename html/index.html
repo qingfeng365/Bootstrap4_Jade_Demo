@@ -1258,7 +1258,302 @@
         </div>
         <h1 class="bd-title">表格</h1>
         <h3>基本表格</h3>
-        <div class="row bd-example"></div>
+        <div class="row bd-example">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>字段1</th>
+                <th>字段2</th>
+                <th>字段3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>值1-1</td>
+                <td>值2-1</td>
+                <td>值3-1</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>值1-2</td>
+                <td>值2-2</td>
+                <td>值3-2	</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>反相表格</h3>
+        <div class="row bd-example">
+          <table class="table table-inverse">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>字段1</th>
+                <th>字段2</th>
+                <th>字段3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>值1-1</td>
+                <td>值2-1</td>
+                <td>值3-1</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>值1-2</td>
+                <td>值2-2</td>
+                <td>值3-2	</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>仅反相表头</h3>
+        <div class="row bd-example">
+          <table class="table">
+            <thead class="thead-inverse">
+              <tr>
+                <th>#</th>
+                <th>字段1</th>
+                <th>字段2</th>
+                <th>字段3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>值1-1</td>
+                <td>值2-1</td>
+                <td>值3-1</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>值1-2</td>
+                <td>值2-2</td>
+                <td>值3-2	</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>仅暗灰表头</h3>
+        <div class="row bd-example">
+          <table class="table">
+            <thead class="thead-default">
+              <tr>
+                <th>#</th>
+                <th>字段1</th>
+                <th>字段2</th>
+                <th>字段3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>值1-1</td>
+                <td>值2-1</td>
+                <td>值3-1</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>值1-2</td>
+                <td>值2-2</td>
+                <td>值3-2	</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>斑马条纹+边框+悬停+小型+响应式</h3>
+        <div class="row bd-example">
+          <table class="table table-striped table-bordered table-hover table-sm table-responsive">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>字段1</th>
+                <th>字段2</th>
+                <th>字段3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>值1-1</td>
+                <td>值2-1</td>
+                <td>值3-1</td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">2</th>
+                <td>值1-2</td>
+                <td>值2-2</td>
+                <td>值3-2	</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>表格反转</h3>
+        <div class="row bd-example">
+          <table class="table table-reflow">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>字段1</th>
+                <th>字段2</th>
+                <th>字段3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>值1-1</td>
+                <td>值2-1</td>
+                <td>值3-1</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>值1-2</td>
+                <td>值2-2</td>
+                <td>值3-2	</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>值1-3</td>
+                <td>值2-3</td>
+                <td>值3-3	</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h1 class="bd-title">分页</h1>
+        <h3>默认分页</h3>
+        <div class="row bd-example">
+          <nav>
+            <ul class="pagination">
+              <li class="disabled"> <a href="#"><span>&laquo;</span><span class="sr-only">上一页</span></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li> <a href="#"><span>&raquo;</span><span class="sr-only">下一页</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row bd-example">
+          <nav>
+            <ul class="pagination pagination-lg">
+              <li class="disabled"> <a href="#"><span>&laquo;</span><span class="sr-only">上一页</span></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li> <a href="#"><span>&raquo;</span><span class="sr-only">下一页</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row bd-example">
+          <nav>
+            <ul class="pagination pagination-sm">
+              <li class="disabled"> <a href="#"><span>&laquo;</span><span class="sr-only">上一页</span></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li> <a href="#"><span>&raquo;</span><span class="sr-only">下一页</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <h3>简易分页</h3>
+        <div class="row bd-example">
+          <nav>
+            <ul class="pager">
+              <li><a href="#">上一页</a></li>
+              <li><a href="#">下一页</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row bd-example">
+          <nav>
+            <ul class="pager">
+              <li class="pager-prev"><a href="#">上一页</a></li>
+              <li class="pager-next"><a href="#">下一页							</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="bd-title">标签</h1>
+        <h3>普通标签</h3>
+        <div class="row bd-example">
+          <ul class="nav">
+            <li><span class="label label-default">default</span></li>
+            <li><span class="label label-primary">primary</span></li>
+            <li><span class="label label-success">success</span></li>
+            <li><span class="label label-info">info</span></li>
+            <li><span class="label label-warning">warning</span></li>
+            <li><span class="label label-danger">danger</span></li>
+          </ul>
+        </div>
+        <h3>丸状标签</h3>
+        <div class="row bd-example">
+          <ul class="nav">
+            <li><span class="label label-pill label-default">default</span></li>
+            <li><span class="label label-pill label-primary">primary</span></li>
+            <li><span class="label label-pill label-success">success</span></li>
+            <li><span class="label label-pill label-info">info</span></li>
+            <li><span class="label label-pill label-warning">warning</span></li>
+            <li><span class="label label-pill label-danger">danger</span></li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="../bower_components/jquery/dist/jquery.min.js"> </script>
